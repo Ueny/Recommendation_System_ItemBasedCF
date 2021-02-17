@@ -2,14 +2,13 @@
 
 We generated the review data from the original Yelp datasets with some filters, such as the condition: “state” == “CA”. We randomly took 80% of the data for training, 10% of the data for testing, and 10% of the data as the blind dataset. We do not share the blind dataset.
 You can access the files (a-e) under the fixed directory on the Vocareum: resource/asnlib/publicdata/
-a. train_review.json
-b. user.json – user metadata
-c. business.json – business metadata, including locations, attributes, and categories
-d. user_avg.json – containing the average stars for the users in the train dataset
-e. business_avg.json – containing the average stars for the businesses in the train dataset
-Besides, the Google Drive provides the above files (a-e) and the following testing files (f and g) https://drive.google.com/open?id=1ss6Tq-hxeRfyst8u-n8Tx8Ykn1jD8GB8 (USC email only)
-f. test_review.json – containing only the target user and business pairs for the prediction task
-g. test_review_ratings.json – containing the ground truth rating for the testing pairs
+1. train_review.json
+2. user.json – user metadata
+3. business.json – business metadata, including locations, attributes, and categories
+4. user_avg.json – containing the average stars for the users in the train dataset
+5. business_avg.json – containing the average stars for the businesses in the train dataset. Besides, the Google Drive provides the above files (a-e) and the following testing files (f and g) https://drive.google.com/open?id=1ss6Tq-hxeRfyst8u-n8Tx8Ykn1jD8GB8 (USC email only)
+6. test_review.json – containing only the target user and business pairs for the prediction task
+7. test_review_ratings.json – containing the ground truth rating for the testing pairs
 
 Training:
 1. When I met that some users rated a business repeatedly, I took the average score as the true rating
